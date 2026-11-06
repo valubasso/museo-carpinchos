@@ -901,4 +901,53 @@ a {
   .footer-education {
     text-align: left;
   }
+
+  .visita-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .info-card,
+  .info-item > div,
+  .contact-links,
+  .footer-brand {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .info-icon {
+    flex-shrink: 0;
+  }
+
+  .info-card a {
+    min-height: 44px;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .info-item a {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .contact-pill {
+    overflow-wrap: anywhere;
+  }
+
+  .footer-logos {
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+
+  .logo-sf {
+    width: clamp(132px, 38vw, 160px);
+    height: auto;
+    max-width: 100%;
+    flex-shrink: 0;
+  }
+
+  .logo-etno {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+  }
 }
