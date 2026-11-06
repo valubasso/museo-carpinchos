@@ -45,6 +45,17 @@ html {
   font-size: 16px;
 }
 
+/* Keep section titles visible below the sticky navbar when jumping to an anchor */
+section[id] {
+  scroll-margin-top: 6rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   font-family: var(--font-body);
   color: var(--c-text);
@@ -161,9 +172,33 @@ a {
   background-color: var(--c-brown-dark);
 }
 
+/* On small screens the menu moves to its own row and scrolls sideways */
 @media (max-width: 900px) {
-  .nav-menu a:not(.btn-nav) {
+  .nav-container {
+    flex-wrap: wrap;
+    row-gap: 0.6rem;
+  }
+
+  .nav-menu {
+    width: 100%;
+    gap: 1.1rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 0.2rem;
+    scrollbar-width: none;
+  }
+
+  .nav-menu::-webkit-scrollbar {
     display: none;
+  }
+
+  .nav-menu a {
+    flex-shrink: 0;
+  }
+
+  /* Keep the main call to action visible without scrolling */
+  .btn-nav {
+    order: -1;
   }
 }
 
@@ -279,13 +314,13 @@ a {
   height: auto;
 }
 
-.hero-carpincho-castillo {
+.hero-carpincho-caminando {
   max-height: 250px;
   object-fit: contain;
   filter: drop-shadow(0 8px 16px rgba(0,0,0,0.1));
 }
 
-.hero-carpincho-pasto {
+.hero-carpincho-arena {
   max-height: 250px;
   object-fit: contain;
   filter: drop-shadow(0 8px 16px rgba(0,0,0,0.1));
@@ -467,12 +502,14 @@ a {
 }
 
 .capitulo-img-duo {
+  width: auto;
   max-height: 95px;
   object-fit: contain;
   filter: drop-shadow(0 6px 12px rgba(0,0,0,0.06));
 }
 
 .capitulo-img {
+  width: auto;
   max-height: 120px;
   object-fit: contain;
   margin: 0.6rem auto 1rem auto;
@@ -525,6 +562,7 @@ a {
 }
 
 .carpincho-blanco-img {
+  width: auto;
   max-height: 200px;
   margin: 0 auto;
   filter: drop-shadow(0 8px 16px rgba(0,0,0,0.08));
@@ -610,6 +648,7 @@ a {
 }
 
 .pileta-img {
+  width: auto;
   max-width: 260px;
   max-height: 200px;
   object-fit: contain;
@@ -828,6 +867,7 @@ a {
 }
 
 .logo-sf {
+  width: auto;
   height: 46px;
   object-fit: contain;
 }
