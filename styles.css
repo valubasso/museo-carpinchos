@@ -179,7 +179,7 @@ a {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
+  grid-template-columns: 1fr 1fr;
   gap: 3.5rem;
   align-items: center;
 }
@@ -261,13 +261,9 @@ a {
 }
 
 .hero-illustration-card {
-  background: linear-gradient(180deg, #81bccb 0%, #81bccb 68%, #e6d39d 68%, #e6d39d 100%);
-  border: 3px solid var(--c-sand);
-  border-radius: var(--radius-lg);
-  padding: 2.5rem 1.8rem 1.5rem 1.8rem;
+  min-width: 0;
+  padding: 2.5rem 0 1.5rem;
   text-align: center;
-  box-shadow: var(--shadow-soft);
-  overflow: hidden;
 }
 
 .hero-duo-wrapper {
@@ -277,33 +273,25 @@ a {
   gap: 1.2rem;
 }
 
+.hero-duo-wrapper > img {
+  width: calc((100% - 1.2rem) / 2);
+  min-width: 0;
+  height: auto;
+}
+
 .hero-carpincho-castillo {
-  max-height: 190px;
+  max-height: 250px;
   object-fit: contain;
   filter: drop-shadow(0 8px 16px rgba(0,0,0,0.1));
 }
 
 .hero-carpincho-pasto {
-  max-height: 170px;
+  max-height: 250px;
   object-fit: contain;
   filter: drop-shadow(0 8px 16px rgba(0,0,0,0.1));
 }
 
-.hero-card-meta {
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(4px);
-  padding: 0.4rem 1.2rem;
-  border-radius: 9999px;
-  display: inline-block;
-  margin-top: 1.2rem;
-  border: 1px solid rgba(147, 70, 38, 0.2);
-}
 
-.hero-card-meta small {
-  color: var(--c-brown-dark);
-  font-weight: 700;
-  font-size: 0.9rem;
-}
 
 /* ==========================================================================
    Sección Bienvenida & Nube de Diálogo
@@ -530,7 +518,6 @@ a {
 
 .card-blanco {
   background: linear-gradient(135deg, #ffffff 0%, var(--c-sand-light) 100%);
-  border: 2px dashed var(--c-brown-soft);
   border-radius: 28px;
   padding: 2.8rem 2rem;
   text-align: center;
@@ -695,6 +682,8 @@ a {
 
 .taller-visual {
   display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   justify-content: center;
   align-items: center;
   padding: 1rem;
@@ -844,7 +833,9 @@ a {
 }
 
 .logo-etno {
-  height: 46px;
+  height: 92px;
+  width: auto;
+  flex-shrink: 0;
   object-fit: contain;
 }
 
