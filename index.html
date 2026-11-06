@@ -11,6 +11,14 @@
 </head>
 <body>
 
+  <!-- Barra Institucional Superior -->
+  <div class="top-meta">
+    <div class="container top-meta-content">
+      <span>Museo Etnográfico y Colonial «Juan de Garay» • Santa Fe</span>
+      <span>Muestra Temporaria • Desde el 9 de Julio de 2025</span>
+    </div>
+  </div>
+
   <!-- Navegación -->
   <header class="navbar">
     <div class="nav-container">
@@ -19,9 +27,10 @@
         <span class="logo-text">¿Carpinchos o Capibaras?</span>
       </a>
       <nav class="nav-menu">
-        <a href="#la-muestra">La Muestra</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#recorrido">La Muestra</a>
         <a href="#ejes">Ejes</a>
-        <a href="#leyendas">Leyendas</a>
+        <a href="#leyendas">Leyenda</a>
         <a href="#curiosidades">Curiosidades</a>
         <a href="#taller">Taller</a>
         <a href="#visita" class="btn-nav">Planificá tu Visita</a>
@@ -30,69 +39,65 @@
   </header>
 
   <main>
-    <!-- Portada / Hero -->
-    <section id="inicio" class="hero">
-      <div class="hero-bg-sky"></div>
-      <div class="container hero-content">
-        <div class="hero-badge">Muestra Temporaria • Desde el 9 de Julio de 2025</div>
-        <h1 class="hero-title">¿Carpinchos o Capibaras?</h1>
-        <p class="hero-subtitle">
-          Entre el Barro y el Meme: un viaje desde el arte ancestral hasta la moda viral.
-        </p>
-        <div class="hero-actions">
-          <a href="#la-muestra" class="btn btn-primary">Conocer la Muestra</a>
-          <a href="#visita" class="btn btn-secondary">Cómo Llegar</a>
+    <!-- Portada / Hero Editorial -->
+    <section id="inicio" class="hero-editorial">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="badge">Muestra Temporaria Oficial</span>
+          <h1 class="hero-title">¿Carpinchos o Capibaras?</h1>
+          <p class="hero-subtitle">
+            Entre el Barro y el Meme: un viaje narrativo desde el arte ancestral del Litoral hasta la moda viral contemporánea.
+          </p>
+          <div class="hero-actions">
+            <a href="#recorrido" class="btn btn-primary">Conocer la Muestra</a>
+            <a href="#visita" class="btn btn-secondary">Cómo Llegar</a>
+          </div>
         </div>
-      </div>
-      <div class="hero-illustration-wrapper">
-        <img src="assets/hero-carpinchos.png" alt="Ilustración de carpinchos jugando en la arena con un castillo" class="hero-img">
-        <div class="hero-sand"></div>
+
+        <div class="hero-illustration-card">
+          <img src="assets/carpincho-pasto.png" alt="Carpincho caminando sobre el pastizal santafesino" class="hero-carpincho-img">
+          <p class="hero-card-desc">El roedor más querido de los humedales santafesinos</p>
+        </div>
       </div>
     </section>
 
-    <!-- Bienvenida / La Muestra -->
-    <section id="la-muestra" class="section section-bienvenida">
+    <!-- Bienvenida / El Carpincho Anfitrión -->
+    <section id="recorrido" class="section section-bienvenida">
       <div class="container">
         <div class="grid-2-col align-center">
-          <div class="speech-bubble-card">
-            <div class="bubble-header">
-              <span class="bubble-tag">¡Mensaje del anfitrión!</span>
+          <div class="story-mascot-dialog">
+            <div class="speech-cloud">
+              <p>
+                “¡Hola! Soy un carpincho que vivió en los humedales de Santa Fe mucho tiempo. 
+                Ahora vivo en el <strong>Museo Ameghino</strong>, pero podés encontrarme en el <strong>Etno</strong>: 
+                a veces voy de visita para que me conozcan los chicos y las chicas.”
+              </p>
             </div>
-            <p class="bubble-quote">
-              “¡¡Hola!! Soy un carpincho que vivió en los humedales de Santa Fe mucho tiempo. 
-              Ahora vivo en el <strong>Museo Ameghino</strong>, pero podés encontrarme en el <strong>Etno</strong>: 
-              a veces voy de visita para que me conozcan los chicos y las chicas.”
-            </p>
-            <div class="bubble-author">
-              <span class="avatar-emoji">🌿</span>
-              <div>
-                <strong>El Carpincho Guía</strong>
-                <small>Habitante de los humedales santafesinos</small>
-              </div>
-            </div>
+            <img src="assets/carpincho-real-cutout.png" alt="Fotografía del carpincho anfitrión" class="story-carpincho-img">
           </div>
 
           <div class="muestra-info">
-            <span class="section-tag">Sobre la Muestra</span>
-            <h2 class="section-title">¿Cuándo y por qué empezó?</h2>
+            <span class="section-tag">Sobre la Exposición</span>
+            <h2 class="section-title">Una muestra que une pasado y presente</h2>
             <p>
               Inició el <strong>9 de julio de 2025</strong> en el <strong>Museo Etnográfico y Colonial «Juan de Garay»</strong> 
               de la ciudad de Santa Fe.
             </p>
             <p>
-              Se creó como una propuesta educativa única: articular la historia ancestral del carpincho y su huella en los pueblos originarios 
-              con el fenómeno contemporáneo de las redes y los memes que dieron la vuelta al mundo.
+              Esta exposición nació con una propuesta educativa única: articular más de 2.000 años de historia ancestral 
+              del carpincho con las comunidades originarias del río Paraná, y el fenómeno masivo de las redes sociales 
+              y el meme que conquistó el mundo entero.
             </p>
-            <div class="real-photo-card">
-              <img src="assets/carpincho-real.png" alt="Carpincho en su hábitat natural" class="real-photo-img">
-              <div class="real-photo-caption">El mayor roedor viviente del planeta en los humedales litoraleños.</div>
-            </div>
+            <p>
+              A través de piezas arqueológicas originales y gráfica contemporánea, descubrí por qué este animal se transformó 
+              en un auténtico símbolo de calma y convivencia comunitaria.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 3 Ejes Temáticos -->
+    <!-- 3 Ejes Temáticos / Capítulos -->
     <section id="ejes" class="section section-ejes">
       <div class="container">
         <div class="section-header text-center">
@@ -104,67 +109,36 @@
         <div class="cards-grid">
           <!-- Eje 1 -->
           <article class="eje-card card-accent-blue">
-            <div class="eje-number">01</div>
+            <span class="capitulo-num">CAPÍTULO I</span>
             <div class="eje-icon">🗣️</div>
             <h3 class="eje-title">¿Carpinchos o Capibaras?</h3>
             <p class="eje-text">
-              Un espacio dedicado a debatir el origen de sus nombres. ¿Por qué en Argentina le decimos carpincho y en casi todo el resto del mundo capibara? Descubrí las raíces guaraníes y tupíes que bautizaron a este noble habitante.
+              Un espacio dedicado a debatir el origen de sus nombres. El legado guaraní (kapiÿva: "señor del pasto") y tupí frente a la adopción internacional del término capibara. Descubrí cómo la lengua construye nuestra identidad regional.
             </p>
             <div class="eje-footer-tag">Eje Lingüístico e Identitario</div>
           </article>
 
           <!-- Eje 2 -->
           <article class="eje-card card-accent-sand">
-            <div class="eje-number">02</div>
-            <div class="eje-icon">🏺</div>
+            <span class="capitulo-num">CAPÍTULO II</span>
+            <img src="assets/carpincho-flores.png" alt="Carpincho con flores y pasto" class="capitulo-img">
             <h3 class="eje-title">Entre el Barro (Vínculo Ancestral)</h3>
             <p class="eje-text">
-              Sector histórico y arqueológico. Hace más de 2.000 años, las comunidades originarias del Litoral eran expertas ceramistas. En sus vasijas modelaban apéndices con forma de carpincho que servían como asas, picos vertedores o piezas rituales.
+              Sector histórico y arqueológico. Hace más de 2.000 años, las comunidades del Litoral eran expertas ceramistas. En sus vasijas modelaban apéndices con forma de carpincho que servían como asas, picos vertedores o piezas ceremoniales.
             </p>
             <div class="eje-footer-tag">Eje Arqueológico • Hace 2.000 años</div>
           </article>
 
           <!-- Eje 3 -->
           <article class="eje-card card-accent-meme">
-            <div class="eje-number">03</div>
-            <div class="eje-card-img-wrap">
-              <img src="assets/carpincho-meme.png" alt="Carpincho con lentes de sol de corazón tomando un trago" class="eje-card-img">
-            </div>
+            <span class="capitulo-num">CAPÍTULO III</span>
+            <img src="assets/carpincho-sombrilla.png" alt="Carpincho con sombrilla en la arena" class="capitulo-img">
             <h3 class="eje-title">El Meme (La Moda Viral)</h3>
             <p class="eje-text">
-              Eje contemporáneo: de los baños termales de Japón saltó a TikTok, Instagram y YouTube. Con su estética <em>kawaii</em> y su calma contagiosa, el carpincho se convirtió en símbolo global de paz, convivencia y fenómeno de consumo masivo.
+              Eje contemporáneo: de los baños termales de Japón saltó a TikTok, Instagram y canciones virales. Con su estética <em>kawaii</em> y su calma contagiosa, el carpincho se transformó en ícono pop masivo de serenidad y coexistencia.
             </p>
             <div class="eje-footer-tag">Eje Viral & Cultura Pop</div>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- En el barro hace 2000 años / Profundización -->
-    <section class="section section-historia">
-      <div class="container">
-        <div class="story-box">
-          <div class="story-content">
-            <span class="section-tag light">Arqueología Viva</span>
-            <h2 class="section-title">En el barro hace 2.000 años</h2>
-            <p>
-              Los pueblos originarios que vivían en el Litoral argentino compartían su vida cotidiana con el carpincho. Este animal no sólo formaba parte de su dieta y entorno, sino que ocupaba un lugar destacado en sus expresiones artísticas y simbólicas.
-            </p>
-            <div class="features-mini-grid">
-              <div class="mini-feature">
-                <h4>Animales de barro</h4>
-                <p>Las vasijas representaban con arcilla figuras de animales del río, integrándolos a la vida del hogar.</p>
-              </div>
-              <div class="mini-feature">
-                <h4>¿Para qué servían?</h4>
-                <p>Muchos apéndices de cerámica eran asas para sujetar recipientes o picos para servir agua fresca.</p>
-              </div>
-              <div class="mini-feature">
-                <h4>Mirada del mundo</h4>
-                <p>Cada pieza expresaba su cosmovisión y el profundo respeto por la fauna del humedal.</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -173,13 +147,10 @@
     <section id="leyendas" class="section section-leyenda">
       <div class="container">
         <div class="grid-2-col align-center">
-          <div class="leyenda-mascot">
-            <div class="mascot-img-container">
-              <img src="assets/carpincho-blanco.png" alt="El legendario Carpincho Blanco" class="mascot-img">
-            </div>
-            <div class="mascot-bubble">
-              <p>“¡Hola! Soy el <strong>Carpincho Blanco</strong>. Cuido los humedales desde hace mucho tiempo, para que mis amigos vivan tranquilos en su hogar.”</p>
-            </div>
+          <div class="card-blanco">
+            <img src="assets/carpincho-blanco.png" alt="El legendario Carpincho Blanco" class="carpincho-blanco-img">
+            <h3 class="blanco-title">El Carpincho Blanco</h3>
+            <p class="blanco-quote">“¡Hola! Soy el Carpincho Blanco. Cuido los humedales desde hace mucho tiempo, para que mis amigos vivan tranquilos en su hogar.”</p>
           </div>
 
           <div class="leyenda-texto">
@@ -188,13 +159,16 @@
             <div class="text-block">
               <h3>Carpinchos Sagrados</h3>
               <p>
-                Por lo general, los animales representados en la cerámica ancestral eran considerados seres protegidos de rituales y creencias. Con el carpincho ocurría una dualidad fascinante: en algunas situaciones se le cazaba con agradecimiento, y en otras era venerado como símbolo espiritual.
+                Por lo general, los animales que los habitantes ancestrales representaban en la alfarería no se comían cotidianamente, ya que eran considerados guardianes protegidos que formaban parte de sus creencias y rituales.
+              </p>
+              <p>
+                Con el carpincho existía una respetuosa dualidad: se lo cazaba con agradecimiento por su sustento, mientras que en otros momentos era venerado como símbolo de vida ribereña.
               </p>
             </div>
             <div class="text-block">
               <h3>La Leyenda del Carpincho Blanco</h3>
               <p>
-                Una de las historias más contadas a orillas del río habla de un misterioso carpincho completamente blanco. Para unos es el <strong>espíritu guardián</strong> que vela por la conservación de su especie; para otros, un protector protector que vigila a quienes dañan el humedal.
+                Una de las leyendas más antiguas a orillas del río habla de un carpincho de pelaje blanco como la luna. Para las comunidades originarias es el <strong>espíritu guardián</strong> que vigila los humedales y protege a su especie.
               </p>
             </div>
           </div>
@@ -202,7 +176,7 @@
       </div>
     </section>
 
-    <!-- Curiosidades -->
+    <!-- Curiosidades Biológicas -->
     <section id="curiosidades" class="section section-curiosidades">
       <div class="container">
         <div class="section-header text-center">
@@ -221,19 +195,21 @@
           <div class="curio-card">
             <div class="curio-icon">👥</div>
             <h3>Vida en Comunidad</h3>
-            <p>Nunca viven solos: forman manadas de <strong>10 a 20 individuos</strong> lideradas por un macho dominante que cuida y organiza a todo el grupo.</p>
+            <p>Nunca viven solos: forman manadas de <strong>10 a 20 individuos</strong> lideradas por un macho protector que cuida y organiza al grupo.</p>
           </div>
 
           <div class="curio-card highlight-card">
             <img src="assets/carpincho-pileta.png" alt="Carpincho flotando feliz boca arriba en el agua" class="pileta-img">
-            <h3>Entre la Tierra y el Agua</h3>
-            <p>Son animales semiacuáticos. Necesitan el agua para regular su temperatura, esconderse y alimentarse. ¡Son campeones nadando y buceando!</p>
+            <div>
+              <h3>Entre la Tierra y el Agua</h3>
+              <p>Son animales semiacuáticos. Necesitan el agua para refrescarse, esconderse y alimentarse. ¡Son nadadores y buceadores excepcionales!</p>
+            </div>
           </div>
 
           <div class="curio-card">
             <div class="curio-icon">🐣</div>
             <h3>Cuidado de las Crías</h3>
-            <p>Apenas nacen, los carpinchitos ya caminan. Toda la familia los custodia y les enseña pacientemente a comer vegetación y nadar.</p>
+            <p>Apenas nacen, los carpinchitos caminan enseguida. Toda la familia los cuida y les enseña pacientemente a alimentarse y nadar.</p>
           </div>
         </div>
       </div>
@@ -248,7 +224,7 @@
               <span class="section-tag">Experiencia Creativa</span>
               <h2 class="section-title">¡Descubrí, creá y divertite en el museo!</h2>
               <p>
-                Te invitamos a disfrutar de una propuesta diferente donde el aprendizaje y la imaginación se encuentran. A lo largo del recorrido vas a poder participar de actividades educativas, creativas y súper divertidas pensadas para explorar y jugar.
+                Te invitamos a disfrutar de una propuesta participativa donde el aprendizaje y la imaginación se encuentran. A lo largo del recorrido vas a poder participar de actividades educativas, creativas y súper divertidas pensadas para explorar y jugar.
               </p>
               <div class="kit-box">
                 <div class="kit-badge">¡Regalo con tu visita!</div>
@@ -339,16 +315,21 @@
     </section>
   </main>
 
-  <!-- Pie de página -->
+  <!-- Pie de página con Logos Oficiales -->
   <footer class="footer">
     <div class="container footer-content">
       <div class="footer-brand">
-        <h4>Museo Etnográfico y Colonial «Juan de Garay»</h4>
-        <p>Ministerio de Cultura • Gobierno de la Provincia de Santa Fe</p>
+        <div class="footer-logos">
+          <img src="assets/Santa Fe Cultura - Negro.png" alt="Santa Fe Provincia • Ministerio de Cultura" class="logo-sf">
+          <img src="assets/Etnografico.png" alt="Museo Etnográfico Juan de Garay" class="logo-etno">
+        </div>
+        <p class="footer-museum-desc">Museo Etnográfico y Colonial «Juan de Garay»</p>
+        <p class="footer-museum-sub">25 de Mayo 1470 • Santa Fe de la Vera Cruz</p>
       </div>
-      <div class="footer-copy">
-        <p>Muestra Temporaria: <em>¿Carpinchos o Capibaras? Entre el Barro y el Meme</em></p>
-        <p class="copyright">Diseñado con dedicación para el patrimonio cultural y la difusión lúdica.</p>
+      <div class="footer-education">
+        <p class="footer-ed-title">Servicios Educativos y Visitas</p>
+        <p class="footer-ed-text">etnograficoyeducativo@gmail.com</p>
+        <p class="footer-ed-text">WhatsApp: 342-5310015 • Tel: (0342) 457-3550</p>
       </div>
     </div>
   </footer>
