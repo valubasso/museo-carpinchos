@@ -173,7 +173,7 @@ a {
 
 .hero-editorial {
   position: relative;
-  background: linear-gradient(180deg, var(--c-sky-light) 0%, var(--c-sand-pale) 100%);
+  background: linear-gradient(180deg, #81bccb 0%, #a2cede 55%, var(--c-sand) 100%);
   padding: 4.5rem 0 3.5rem 0;
 }
 
@@ -261,25 +261,48 @@ a {
 }
 
 .hero-illustration-card {
-  background: var(--c-white);
+  background: linear-gradient(180deg, #81bccb 0%, #81bccb 68%, #e6d39d 68%, #e6d39d 100%);
   border: 3px solid var(--c-sand);
   border-radius: var(--radius-lg);
-  padding: 2.5rem 2rem;
+  padding: 2.5rem 1.8rem 1.5rem 1.8rem;
   text-align: center;
   box-shadow: var(--shadow-soft);
+  overflow: hidden;
 }
 
-.hero-carpincho-img {
-  max-height: 220px;
-  margin: 0 auto;
-  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.08));
+.hero-duo-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1.2rem;
 }
 
-.hero-card-desc {
-  font-size: 0.95rem;
-  color: var(--c-text-muted);
-  font-weight: 600;
-  margin-top: 1rem;
+.hero-carpincho-castillo {
+  max-height: 190px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.1));
+}
+
+.hero-carpincho-pasto {
+  max-height: 170px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.1));
+}
+
+.hero-card-meta {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(4px);
+  padding: 0.4rem 1.2rem;
+  border-radius: 9999px;
+  display: inline-block;
+  margin-top: 1.2rem;
+  border: 1px solid rgba(147, 70, 38, 0.2);
+}
+
+.hero-card-meta small {
+  color: var(--c-brown-dark);
+  font-weight: 700;
+  font-size: 0.9rem;
 }
 
 /* ==========================================================================
@@ -447,6 +470,20 @@ a {
   margin: 0.6rem 0;
 }
 
+.capitulo-illustrations-duo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 0.6rem 0 1rem 0;
+}
+
+.capitulo-img-duo {
+  max-height: 95px;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.06));
+}
+
 .capitulo-img {
   max-height: 120px;
   object-fit: contain;
@@ -587,7 +624,10 @@ a {
 
 .pileta-img {
   max-width: 260px;
-  border-radius: var(--radius-md);
+  max-height: 200px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.08));
+  flex-shrink: 0;
 }
 
 /* ==========================================================================
@@ -654,25 +694,19 @@ a {
 }
 
 .taller-visual {
-  position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 .kit-img {
   width: 100%;
-  max-width: 360px;
-  border-radius: var(--radius-md);
+  max-width: 440px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 18px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
-}
-
-.paraguas-img {
-  position: absolute;
-  bottom: -25px;
-  right: -20px;
-  max-width: 170px;
-  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.15));
 }
 
 /* ==========================================================================
